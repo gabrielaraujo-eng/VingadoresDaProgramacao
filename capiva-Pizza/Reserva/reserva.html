@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleReserva.css">
+    <title>Reservas - Capivara Pizza</title>
+</head>
+<body>
+
+  <header>
+      <p><a href="index.html">Capivara Pizza</a></p>
+      <nav>
+        <ul>
+          <li><a href="/capiva-Pizza/Home/indexHome.html">Home</a></li>
+          <li><a href="/capiva-Pizza/Cadapio/cardapio.html" aria-current="page">Cardápio</a></li>
+          <li><a href="/capiva-Pizza/Pratos/pratos.html">Detalhe</a></li>
+          <li><a href="/capiva-Pizza/Reserva/reserva.html">Reserva</a></li>
+          <li><a href="/capiva-Pizza/Contato/contato.html" aria-current="construção">Contato</a></li>
+        </ul>
+      </nav>
+  </header>
+
+    <main>
+            <section class="reserva">
+                <img src="../img/reserva.jpg" alt="Imagem de reserva de mesas">
+                <h2>Reserva de mesas</h2>
+                <p>Garanta uma experiência incrível com sabores inesquecíveis e um ambiente feito para reunir quem você ama. Escolha a data, o horário e garanta o seu lugar sem filas!</p>
+                <a href="#cadastroReserva">Reservar Agora</a>
+            </section>
+
+            <section id="cadastroReserva" class="cadastroReserva">
+                <h2>Faça sua reserva!</h2>
+                <form class="formReserva" >
+                    <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Ex: John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="johndoe@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Ex: (19) 99999-9999" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="data">Data da Reserva:</label>
+                    <input type="date" id="data" name="data" placeholder="20/08/2026" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="horario">Horário:</label>
+                    <input type="time" id="horario" name="horario" placeholder="19:00" required>
+                    </div>
+                     
+                    <div class="form-group">
+                    <label for="quantidade">Quantidade de Pessoas:</label>
+                    <input type="number" id="quantidade" name="quantidade" min="1" max="25" placeholder="Ex: 4" required>
+                    </div>
+
+                    <div class="form-group">
+                    <button type="submit">Confirmar Reserva</button>
+                    </div>
+                </form>
+
+            </section>
+
+    </main>
+
+    <footer>
+    <h5>Capivara Pizza</h5>
+        <nav>
+        <ul>
+            <li><a href="/capiva-Pizza/Contato/contato.html">Sobre</a></li>
+            <li><a href="/capiva-Pizza/Contato/contato.html">Contato</a></li>
+            <li><a href="/capiva-Pizza/Contato/contato.html#mensagem">Termos</a></li>
+            <li><a href="/capiva-Pizza/Contato/contato.html#mensagem">Privacidade</a></li>
+        </ul>
+        </nav>
+        <ul class="redes">
+        <li><a href="#" aria-label="Instagram"></a></li>
+        <li><a href="#" aria-label="Facebook"></a></li>
+        <li><a href="#" aria-label="WhatsApp"></a></li>
+        <li><a href="#" aria-label="YouTube"></a></li>
+        </ul>
+        <p>© Capivara Pizza. Todos os direitos reservados.</p>
+    </footer>
+  
+</body>
+</html>
