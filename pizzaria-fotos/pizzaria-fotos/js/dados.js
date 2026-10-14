@@ -159,6 +159,8 @@ function itemArt(it) { return it.top ? pizzaArt(it.top, it.id, it.name) : art(it
 
 /* ---------- fotos (as mesmas do cardapio da equipe) ---------- */
 var PHOTOS = {
+  "Calabresa": "https://www.sabornamesa.com.br/media/k2/items/cache/513d7a0ab11e38f7bd117d760146fed3_XL.jpg",
+  "Mussarela": "https://i.pinimg.com/736x/9e/f3/32/9ef332b3cb6c5efa6a2643af93aa6df2.jpg",
   "Marguerita": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=400&q=80",
   "Napolitana": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=400&q=80",
   "Pepperoni": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=400&q=80",
@@ -176,7 +178,7 @@ var PHOTOS = {
   "Açaí": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&w=400&q=80",
   "Banana Split": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=400&q=80",
   "Combo Família": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=400&q=80",
-  "Combo Casal": "https://images.unsplash.com/photo-1548365328-8b84983b19b3?auto=format&fit=crop&w=400&q=80",
+  "Combo Casal": "https://plus.unsplash.com/premium_photo-1674662515879-66291ed854eb?auto=format&fit=crop&w=800&q=80&ixlib=rb-4.1.0",
   "Combo Individual": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=400&q=80",
   "Combo Kids": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=400&q=80",
   "Combo Executivo": "https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=400&q=80",
@@ -184,7 +186,7 @@ var PHOTOS = {
   "Combo Light": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?auto=format&fit=crop&w=400&q=80",
   "Combo Premium": "https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=400&q=80",
   "Combo Surpresa": "https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=400&q=80",
-  "Batata Frita": "https://images.unsplash.com/photo-1573080496681-429d4d4b0d0c?auto=format&fit=crop&w=400&q=80",
+  "Batata Frita": "https://msabores.com/wp-content/uploads/2025/09/Batata-Frita-com-Paprica.webp",
   "Onion Rings": "https://images.unsplash.com/photo-1639024471283-03518883512d?auto=format&fit=crop&w=400&q=80",
   "Bolinho de Bacalhau": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=400&q=80",
   "Bruschetta": "https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?auto=format&fit=crop&w=400&q=80",
@@ -192,7 +194,7 @@ var PHOTOS = {
   "Pastel": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=400&q=80",
   "Salada Caesar": "https://images.unsplash.com/photo-1546793665-c74683f339c1?auto=format&fit=crop&w=400&q=80",
   "Provolone": "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=400&q=80",
-  "Camarão Empanado": "https://images.unsplash.com/photo-1565680018434-b513d5ea5fc0?auto=format&fit=crop&w=400&q=80"
+  "Camarão Empanado": "https://plus.unsplash.com/premium_photo-1667115593089-17f5b6116217?auto=format&fit=crop&w=800&q=80&ixlib=rb-4.1.0"
 };
 ITEMS.forEach(function (it) { if (PHOTOS[it.name]) it.photo = PHOTOS[it.name]; });
 
