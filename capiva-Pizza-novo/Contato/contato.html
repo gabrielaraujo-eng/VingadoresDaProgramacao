@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre e Contato - Pizzaria-Pizzaria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body data-page="contato">
+  <header class="top">
+    <div class="wrap">
+      <div class="bar">
+        <a class="brand" href="../Home/index.html">PIZZARIA-PIZZARIA</a>
+        <div class="bar-acoes">
+          <button class="order-btn" type="button" data-open-cart>Delivery <span class="count">0</span></button>
+          <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu"><span aria-hidden="true"></span></button>
+        </div>
+      </div>
+      <nav class="links" id="menu-principal" aria-label="Páginas do site">
+        <a href="../Home/index.html">Home</a>
+        <a href="../Cadapio/cardapio.html">Cardápio</a>
+        <a href="../Pratos/pratos.html">Detalhe dos pratos</a>
+        <a href="../Reserva/reserva.html">Reserva de mesa</a>
+        <a href="../Contato/contato.html" aria-current="page">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap pad">
+    <section id="sobre">
+      <h1 class="page-title">Sobre nós</h1>
+      <div class="about-art" aria-hidden="true"><span>Desde</span><strong>2010</strong><em>Pizzaria-Pizzaria</em></div>
+      <div class="about-p">
+        <p>Fundada em 2010, a Pizzaria-Pizzaria nasceu da paixão por massas artesanais e ingredientes frescos.</p>
+        <p>Nossa missão é oferecer a melhor experiência em pizzas, com receitas tradicionais e opções inovadoras.</p>
+        <p>Contamos com uma equipe dedicada e um ambiente acolhedor para toda a família.</p>
+      </div>
+    </section>
+
+    <div class="contact-grid">
+      <section id="contato">
+        <h2 class="page-title" style="font-size:2.2rem;margin-bottom:14px">Contato</h2>
+        <dl class="cinfo">
+          <div><dt>Endereço</dt><dd>Rua das Pizzas, 123 - Centro</dd></div>
+          <div><dt>Telefone</dt><dd><a href="tel:+5511999999999">(11) 99999-9999</a></dd></div>
+          <div><dt>WhatsApp</dt><dd><a href="https://wa.me/5511988888888">(11) 98888-8888</a></dd></div>
+          <div><dt>E-mail</dt><dd><a href="mailto:contato@pizzaria-pizzaria.com">contato@pizzaria-pizzaria.com</a></dd></div>
+          <div><dt>Horário</dt><dd>Ter a Dom - 18h às 23h</dd></div>
+        </dl>
+      </section>
+
+      <section id="mensagem">
+        <form class="msg-form" id="form-contato" novalidate>
+          <h2>Envie uma mensagem</h2>
+          <div class="field"><label for="mNome">Nome</label><input class="in" id="mNome" name="nome" autocomplete="name" required></div>
+          <div class="field"><label for="mEmail">E-mail</label><input class="in" id="mEmail" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="mMsg">Mensagem</label><textarea class="in" id="mMsg" name="mensagem" rows="4" required></textarea></div>
+          <button class="btn primary" type="submit">Enviar mensagem</button>
+          <p class="result" id="ok" role="status" hidden></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot">
+        <a class="brand" href="../Home/index.html">PIZZARIA-PIZZARIA</a>
+        <nav class="foot-links" aria-label="Rodapé">
+          <a href="../Contato/contato.html#sobre">Sobre</a>
+          <a href="../Contato/contato.html#contato">Contato</a>
+          <a href="#" data-info>Termos</a>
+          <a href="#" data-info>Privacidade</a>
+        </nav>
+        <ul class="social" aria-label="Redes sociais">
+          <li><a href="#" data-info aria-label="Fotos"><svg viewBox="0 0 24 24"><path d="M4 8h3l1.5-2h7L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.2"/></svg></a></li>
+          <li><a href="#" data-info aria-label="Mensagens"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H10l-4 4v-4H4z"/><path d="M8 9.5h8M8 12.5h5"/></svg></a></li>
+          <li><a href="#" data-info aria-label="Curtir"><svg viewBox="0 0 24 24"><path d="M8 11v9H4v-9z"/><path d="M8 11l4-7c2 0 3 1 3 3l-.5 3H20l-1.5 8H8"/></svg></a></li>
+          <li><a href="#" data-info aria-label="Vídeos"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M10 9.5v5l4.5-2.5z"/></svg></a></li>
+        </ul>
+        <p class="copyright">© 2026 Pizzaria-Pizzaria. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/dados.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>
