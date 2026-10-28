@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#B30F14">
+  <title>Capiva Pizza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+SC:wght@500;600;700&family=Courier+Prime&family=Lilita+One&display=swap">
+  <script>try{if(localStorage.getItem('pizzaria-tema')==='light')document.documentElement.dataset.theme='light'}catch(e){}</script>
+  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="stylesheet" href="../css/capiva.css">
+</head>
+<body data-page="home">
+  <header class="top">
+    <div class="wrap">
+      <div class="bar">
+        <a class="brand" href="../Home/index.html"><img src="../img/logo.png" alt="Logo Capiva Pizza"><span>Capiva Pizza</span></a>
+        <div class="bar-acoes">
+          <button class="order-btn" type="button" data-open-cart>Delivery <span class="count">0</span></button>
+          <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu"><span aria-hidden="true"></span></button>
+        </div>
+      </div>
+      <nav class="links" id="menu-principal" aria-label="Páginas do site">
+        <a href="../Home/index.html" aria-current="page">Home</a>
+        <a href="../Cadapio/cardapio.html">Cardápio</a>
+        <a href="../Pratos/pratos.html">Detalhe dos pratos</a>
+        <a href="../Reserva/reserva.html">Reserva de mesa</a>
+        <a href="../Contato/contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="band-hero">
+      <div class="hero-bg" aria-hidden="true"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=1920&q=80" alt="" onerror="this.remove()"></div>
+      <div class="wrap hero">
+        <div class="hero-copy">
+          <p class="status" id="status"><span class="dot"></span><span id="statusText">Verificando horário</span></p>
+          <h1>Massa de 48 horas. Forno a lenha a 400 °C.</h1>
+          <p class="lead">Nove sabores de pizza, sobremesas, entradas, combos e bebidas. Escolha um prato, leia a descrição e monte seu pedido.</p>
+          <div class="cta">
+            <a class="btn primary" href="../Cadapio/cardapio.html">Ver cardápio</a>
+            <a class="btn" href="../Reserva/reserva.html">Reservar mesa</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap pad">
+      <section class="promos" id="promos" data-slide="0" aria-label="Promoções">
+        <div class="slide s1"><div class="sl-copy"><span class="tagline">Promoção da semana</span><h2>Terça da Mussarela</h2><p>Pizza broto de mussarela por R$ 20,00 todas as terças, para comer aqui ou levar.</p><a class="btn" href="../Pratos/pratos.html?sabor=Mussarela">Ver a pizza</a></div><div class="sl-art"><span class="media" data-art="mussarela"><img src="https://i.pinimg.com/736x/9e/f3/32/9ef332b3cb6c5efa6a2643af93aa6df2.jpg" alt="Mussarela" loading="lazy" onerror="this.remove()"></span></div></div>
+        <div class="slide s2" hidden><div class="sl-copy"><span class="tagline">Combo em destaque</span><h2>Combo Casal</h2><p>Pizza média, duas sobremesas e refrigerante de 1 litro por R$ 72,00.</p><a class="btn" href="../Pratos/pratos.html?sabor=Combo%20Casal">Ver o combo</a></div><div class="sl-art"><span class="media" data-art="casal"><img src="https://plus.unsplash.com/premium_photo-1674662515879-66291ed854eb?auto=format&fit=crop&w=800&q=80&ixlib=rb-4.1.0" alt="Combo Casal" loading="lazy" onerror="this.remove()"></span></div></div>
+        <div class="slide s3" hidden><div class="sl-copy"><span class="tagline">Para fechar bem</span><h2>Sobremesa quente</h2><p>Petit gâteau com sorvete de creme, servido assim que sai do forno.</p><a class="btn" href="../Pratos/pratos.html?sabor=Petit%20Gateau">Ver a sobremesa</a></div><div class="sl-art"><span class="media" data-art="petitgateau"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=400&q=80" alt="Petit Gateau" loading="lazy" onerror="this.remove()"></span></div></div>
+        <div class="car-ctl">
+          <div class="dots" id="dots"></div>
+          <div class="arrows"><button type="button" data-slide="-1" aria-label="Promoção anterior">‹</button><button type="button" data-slide="1" aria-label="Próxima promoção">›</button></div>
+        </div>
+      </section>
+
+      <div class="section-head"><h2>O que você quer pedir?</h2></div>
+      <div class="tiles">
+        <a class="tile" href="../Cadapio/cardapio.html?cat=pizzas"><span class="t-art"><span class="media" data-art="calabresa"><img src="https://www.sabornamesa.com.br/media/k2/items/cache/513d7a0ab11e38f7bd117d760146fed3_XL.jpg" alt="Calabresa" loading="lazy" onerror="this.remove()"></span></span><span class="lbl">Pizzas</span></a>
+        <a class="tile" href="../Pratos/pratos.html?sabor=Supreme"><span class="t-art"><span class="media" data-art="supreme"><img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?auto=format&fit=crop&w=400&q=80" alt="Supreme" loading="lazy" onerror="this.remove()"></span></span><span class="lbl">Especial da Casa</span></a>
+        <a class="tile" href="../Cadapio/cardapio.html?cat=bebidas"><span class="t-art"><span class="media" data-art="drink"><img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=400&q=80" alt="Bebidas" loading="lazy" onerror="this.remove()"></span></span><span class="lbl">Bebidas</span></a>
+        <a class="tile" href="../Cadapio/cardapio.html?cat=sobremesa"><span class="t-art"><span class="media" data-art="petitgateau"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=400&q=80" alt="Petit Gateau" loading="lazy" onerror="this.remove()"></span></span><span class="lbl">Sobremesa</span></a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot">
+        <a class="brand" href="../Home/index.html"><span>Capiva Pizza</span></a>
+        <nav class="foot-links" aria-label="Rodapé">
+          <a href="../Contato/contato.html#sobre">Sobre</a>
+          <a href="../Contato/contato.html#contato">Contato</a>
+          <a href="#" data-info>Termos</a>
+          <a href="#" data-info>Privacidade</a>
+        </nav>
+        <ul class="social" aria-label="Redes sociais">
+          <li><a href="#" data-info aria-label="Fotos"><svg viewBox="0 0 24 24"><path d="M4 8h3l1.5-2h7L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.2"/></svg></a></li>
+          <li><a href="#" data-info aria-label="Mensagens"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H10l-4 4v-4H4z"/><path d="M8 9.5h8M8 12.5h5"/></svg></a></li>
+          <li><a href="#" data-info aria-label="Curtir"><svg viewBox="0 0 24 24"><path d="M8 11v9H4v-9z"/><path d="M8 11l4-7c2 0 3 1 3 3l-.5 3H20l-1.5 8H8"/></svg></a></li>
+          <li><a href="#" data-info aria-label="Vídeos"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="3"/><path d="M10 9.5v5l4.5-2.5z"/></svg></a></li>
+        </ul>
+        <p class="copyright">© 2026 Capiva Pizza. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/dados.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>
