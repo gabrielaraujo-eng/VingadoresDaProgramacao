@@ -1,0 +1,340 @@
+/* PALETA INSPIRADA NA LOGO — VERSÃO MAIS ESCURA
+   Vermelho bordô:  #790D0D
+   Vermelho escuro: #5C0808
+   Amarelo mostarda: #C49A18
+   Fundo: #1B0505
+   Creme: #F4EAD5
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1B0505;
+    color: #F4EAD5;
+}
+
+/* CABEÇALHO */
+.cabecalho-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 5px 3%;
+    background-color: #790D0D;
+    border-bottom: 3px solid #C49A18;
+}
+
+.logo img {
+    width: 230px;
+    max-width: 100%;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style: none;
+}
+
+.menu a {
+    color: #F4EAD5;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #C49A18;
+}
+
+/* BANNERS */
+.banner-principal img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* CARROSSEL NO ESPAÇO DO BANNER PROMOCIONAL */
+.banner-principal {
+    margin-bottom: 12px;
+}
+
+.banner-promocional {
+    position: relative;
+    width: 100%;
+}
+
+.carrossel-banner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 12px;
+}
+
+.janela-banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.faixa-banner {
+    display: flex;
+    transition: transform 0.45s ease;
+}
+
+.faixa-banner img {
+    flex: 0 0 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.seta-banner {
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background-color: #790D0D;
+    color: #F4EAD5;
+    font-size: 19px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.seta-banner:hover {
+    background-color: #C49A18;
+    color: #1B0505;
+}
+
+.indicadores-banner {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 0 4px;
+}
+
+.indicador-banner {
+    width: 11px;
+    height: 11px;
+    border: none;
+    border-radius: 50%;
+    background-color: #8A6660;
+    cursor: pointer;
+}
+
+.indicador-banner.ativo {
+    background-color: #C49A18;
+}
+
+/* CARDÁPIO */
+.secao-cardapio {
+    padding: 55px 6% 75px;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.subtitulo {
+    color: #C49A18;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.titulo-secao h1 {
+    color: #F4EAD5;
+    font-size: 32px;
+}
+
+.lista-categorias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    height: 100%;
+    background-color: #F4EAD5;
+    color: #1B0505;
+    border: 2px solid #C49A18;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card figure {
+    margin: 0;
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    display: block;
+    object-fit: cover;
+}
+
+.card-conteudo {
+    padding: 18px;
+    text-align: center;
+}
+
+.card h2 {
+    color: #790D0D;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.5;
+    min-height: 90px;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 22px;
+    background-color: #790D0D;
+    color: #F4EAD5;
+    text-decoration: none;
+    border-radius: 22px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #5C0808;
+    color: #C49A18;
+}
+
+/* DETALHES DOS PRATOS */
+.detalhes-pratos {
+    text-align: center;
+    padding: 45px 6%;
+    background-color: #5C0808;
+    border-top: 3px solid #C49A18;
+    border-bottom: 3px solid #C49A18;
+}
+
+.detalhes-pratos h2 {
+    color: #C49A18;
+    margin-bottom: 12px;
+}
+
+/* RODAPÉ */
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 35px 6%;
+    background-color: #790D0D;
+    border-top: 3px solid #C49A18;
+    color: #F4EAD5;
+    text-align: center;
+}
+
+.logo-rodape img {
+    width: 300px;
+    max-width: 100%;
+    display: block;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    list-style: none;
+}
+
+.redes-sociais a {
+    color: #1B0505;
+    background-color: #C49A18;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.redes-sociais a:hover {
+    background-color: #F4EAD5;
+}
+
+.direitos {
+    font-size: 16px;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .cabecalho-principal {
+        flex-direction: column;
+    }
+
+    .lista-categorias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* CELULAR */
+@media (max-width: 600px) {
+    .carrossel-banner {
+        gap: 5px;
+        padding: 0 5px;
+    }
+
+    .seta-banner {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .cabecalho-principal {
+        padding: 18px 5%;
+    }
+
+    .logo img {
+        width: 190px;
+    }
+
+    .menu {
+        gap: 14px;
+    }
+
+    .menu a {
+        font-size: 15px;
+    }
+
+    .secao-cardapio {
+        padding: 40px 5%;
+    }
+
+    .titulo-secao h1 {
+        font-size: 26px;
+    }
+
+    .lista-categorias {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 220px;
+    }
+
+        .direitos {
+        font-size: 13px;
+    }
+}

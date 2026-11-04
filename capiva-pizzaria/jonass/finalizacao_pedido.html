@@ -1,0 +1,420 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    
+
+    <title>Capiva-Pizza</title>
+</head>
+ <!-- CABEÇALHO -->
+    <header class="cabecalho-principal">
+        <a href="#inicio" class="logo">
+            <!-- Coloque sua logo em img/logo.png -->
+            <img src="img/LogoPizza.png" alt="Logo Capiva-Pizza">
+        </a>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="../home/index.html">Home</a></li>
+                <li><a href="../cardapio/cardapio.html">Cardápio</a></li>
+                <li><a href="../jonass/finalizacao_pedido.html">Detalhe dos pratos</a></li>
+                <li><a href="/capiva-Pizza/Reserva/reserva.html">Reserva de mesa</a></li>
+                <li><a href="/capiva-Pizza/Contato/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        
+        <section class="pizza-principal">
+
+            <h2>Sabor selecionado: Calabresa</h2>
+
+            <figure class="baner-imagem">
+                <img
+                    src="https://cdn6.campograndenews.com.br/uploads/noticias/2022/03/04/3cb5530b66938475b217183a18974de301f5b0fd.jpg"
+                    alt="Pizza de calabresa"
+                    width="320"
+                >
+                <figcaption>Pizza de calabresa</figcaption>
+            </figure>
+
+            <h2>Composição</h2>
+
+            <p>
+                <strong>Massa de longa fermentação:</strong>
+                preparada com farinha italiana tipo 00 e fermentada
+                por 24 a 48 horas. O resultado é uma massa leve,
+                com bordas altas, aeradas e levemente tostadas.
+            </p>
+
+            <p>
+                <strong>Molho de tomate San Marzano:</strong>
+                um molho rústico e fresco, preparado com tomates
+                pelados italianos, uma pitada de sal marinho
+                e folhas de manjericão.
+            </p>
+
+            <p>
+                <strong>Queijos especiais:</strong>
+                fior di latte e stracciatella, que proporcionam
+                cremosidade e um sabor diferenciado.
+            </p>
+
+            <p>
+                <strong>Calabresa laminada e defumada:</strong>
+                linguiça calabresa artesanal, cortada em fatias
+                finas, com bordas crocantes e sabor defumado.
+            </p>
+
+            <h2>
+                De <s>R$ 45,50</s>
+                por apenas R$ 25,00!
+            </h2>
+
+            <!-- Promoção -->
+            
+            <div class="letreiro">
+             <div class="trilho">
+              <span>🔥 PROMOÇÃO IMPERDÍVEL - Aproveite !!! </span>
+              <span aria-hidden="true">Na compra de 2 Pizzas você garante um refrigerante e uma pizza broto de brinde Aproveite!</span>
+              </div>
+              </div>
+
+                <button type="button" class="botao">
+                    Participe agora
+                </button>
+            </div>
+
+            <!-- Escolha do tamanho -->
+            <fieldset>
+                <legend>Tamanho da pizza</legend>
+
+                <label>
+                    <input type="radio" name="tamanho" value="P">
+                    P
+                </label>
+
+                <label>
+                    <input type="radio" name="tamanho" value="M">
+                    M
+                </label>
+
+                <label>
+                    <input type="radio" name="tamanho" value="G">
+                    G
+                </label>
+            </fieldset>
+            <button class="botao">
+             finalizar compra
+             </button>
+        </section>
+
+        <!-- Outros sabores -->
+        <section class="outros-sabores">
+
+            <h2>Outros sabores que você também pode gostar</h2>
+
+            <article class="pizza">
+                <figure>
+                    <img
+                        src="https://cdn.vucasolution.com.br/upload/w_800/https://gryyplgyeyqb.compat.objectstorage.sa-saopaulo-1.oraclecloud.com/vuca-cdn/dommarv/arqs/produtos/fdec5baee33dd779511c67f7c63ded4bf111b6cf.jpg"
+                        alt="Pizza americana"
+                        width="320"
+                    >
+                    <figcaption>Pizza americana</figcaption>
+                </figure>
+
+                <p>
+                    De <s>R$ 35,00</s>
+                    por <strong>R$ 25,00</strong>
+                </p>
+            </article>
+
+            <article class="pizza">
+                <figure>
+                    <img
+                        src="https://www.receitasnestle.com.br/sites/default/files/srh_recipes/c2d1b42e841cd70b0512821623906608.jpg"
+                        alt="Pizza de mussarela"
+                        width="320"
+                    >
+                    <figcaption>Pizza de mussarela</figcaption>
+                </figure>
+
+                <p>
+                    De <s>R$ 30,00</s>
+                    por <strong>R$ 20,00</strong>
+                </p>
+            </article>
+
+        </section>
+
+    <div class="avaliacao">
+        <h2> Pizza Calabresa</h2>
+        <p>O que os clientes acharam do sabor?</p>
+
+        <div class="info">
+            <span>Sabor aprovado</span>
+            <span>92%</span>
+        </div>
+
+        <div class="barra">
+            <div class="progresso"></div>
+        </div>
+
+        <p class="total">Baseado em 100 avaliações</p>
+    </div>
+
+</body>
+</html>
+
+        <!-- Avaliação -->
+        <section class="avaliacao">
+
+            <h2>Avalie nossas pizzas</h2>
+
+            <fieldset class="estrelas">
+                <legend>Sua nota</legend>
+
+                <input type="radio" name="nota" id="n5" value="5">
+                <label for="n5" aria-label="5 estrelas">★</label>
+
+                <input type="radio" name="nota" id="n4" value="4">
+                <label for="n4" aria-label="4 estrelas">★</label>
+
+                <input type="radio" name="nota" id="n3" value="3">
+                <label for="n3" aria-label="3 estrelas">★</label>
+
+                <input type="radio" name="nota" id="n2" value="2">
+                <label for="n2" aria-label="2 estrelas">★</label>
+
+                <input type="radio" name="nota" id="n1" value="1">
+                <label for="n1" aria-label="1 estrela">★</label>
+            </fieldset>
+
+        </section>
+
+        <!-- Lista de sabores -->
+        <section class="opcoes">
+
+            <h2>Explore nosso cardápio</h2>
+
+            <label for="lanche">Escolha outro sabor:</label>
+
+            <select id="lanche" name="sabor">
+                <optgroup label="Pizzas salgadas">
+                    <option value="americana">Americana</option>
+                    <option value="malagueta">Malagueta</option>
+                    <option value="quatro-queijos">4 queijos</option>
+                    <option value="frango">Frango</option>
+                    <option value="brocolis">Brócolis</option>
+                    <option value="bacon">Bacon</option>
+                    <option value="portuguesa">Portuguesa</option>
+                    <option value="especial">Especial da casa</option>
+                    <option value="palmito">Palmito</option>
+                    <option value="carne-seca">Carne seca</option>
+                    <option value="frango-catupiry">Frango com catupiry</option>
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="marguerita">Marguerita</option>
+                </optgroup>
+
+                <optgroup label="Pizzas doces">
+                    <option value="brigadeiro">Brigadeiro</option>
+                    <option value="mesclada">Mesclada</option>
+                    <option value="banana-nevada">Banana nevada</option>
+                    <option value="chocolate-morango">Chocolate com morango</option>
+                    <option value="romeu-julieta">Romeu e Julieta</option>
+                </optgroup>
+            </select>
+
+        </section>
+
+        <!-- Cancelamento do pedido -->
+        <section class="cancelamento">
+
+            <button type="button" id="abrir">
+                Cancelar pedido?
+            </button>
+
+            <dialog id="confirma">
+                <h2>Tem certeza?</h2>
+
+                <p>Essa ação não pode ser desfeita.</p>
+
+                <button type="button" id="cancelar">
+                    Voltar
+                </button>
+
+                <button type="button" id="confirmar">
+                    Sim, excluir
+                </button>
+            </dialog>
+
+        </section>
+            
+
+            <div class="trilho">
+                <div class="preenchido"></div>
+            </div>
+
+        </section>
+
+    </main>
+
+    
+
+    <script>
+        const abrir = document.getElementById("abrir");
+        const confirma = document.getElementById("confirma");
+        const cancelar = document.getElementById("cancelar");
+        const confirmar = document.getElementById("confirmar");
+
+        abrir.addEventListener("click", () => {
+            confirma.showModal();
+        });
+
+        cancelar.addEventListener("click", () => {
+            confirma.close();
+        });
+
+        confirmar.addEventListener("click", () => {
+            confirma.close();
+            alert("Pedido cancelado!");
+        });
+    </script>
+
+
+
+<main class="area-feedback">
+
+  <!-- FORMULÁRIO DE AVALIAÇÃO -->
+  <section class="card-feedback">
+    <h2> Deixe sua opinião</h2>
+    <p>Queremos saber como foi sua experiência!</p>
+
+    <form id="formAvaliacao">
+      <label for="nome">Seu nome</label>
+      <input
+        type="text"
+        id="nome"
+        placeholder="Digite seu nome"
+        required
+      >
+
+      <label for="pizza">Avaliação da pizza</label>
+      <select id="pizza" required>
+        <option value="">Selecione uma nota</option>
+        <option value="5"> Excelente</option>
+        <option value="4"> Muito boa</option>
+        <option value="3"> Boa</option>
+        <option value="2"> Regular</option>
+        <option value="1"> Ruim</option>
+      </select>
+
+      <label for="atendimento">Avaliação do atendimento</label>
+      <select id="atendimento" required>
+        <option value="">Selecione uma nota</option>
+        <option value="5"> Excelente</option>
+        <option value="4"> Muito bom</option>
+        <option value="3"> Bom</option>
+        <option value="2"> Regular</option>
+        <option value="1"> Ruim</option>
+      </select>
+
+      <label for="comentario">Seu comentário</label>
+      <textarea
+        id="comentario"
+        placeholder="Conte o que achou da pizza e do atendimento..."
+        rows="4"
+        required
+      ></textarea>
+
+      <button type="submit" class="btn-avaliacao">
+        Enviar avaliação
+      </button>
+
+      <p id="retornoAvaliacao" role="status"></p>
+    </form>
+  </section>
+
+  <!-- FORMULÁRIO DE RECLAMAÇÃO -->
+  <section class="card-feedback problema">
+    <h2>Reportar um problema</h2>
+    <p>Algo deu errado? Conte para nossa equipe.</p>
+
+    <form id="formProblema">
+      <label for="numeroPedido">Número do pedido</label>
+      <input
+        type="text"
+        id="numeroPedido"
+        placeholder="Ex.: 1025"
+        required
+      >
+
+      <label for="tipoProblema">Tipo de problema</label>
+      <select id="tipoProblema" required>
+        <option value="">Selecione o problema</option>
+        <option value="Pedido errado">Pedido errado</option>
+        <option value="Item faltando">Item faltando</option>
+        <option value="Pizza fria">Pizza chegou fria</option>
+        <option value="Atraso">Atraso na entrega</option>
+        <option value="Qualidade">Problema com a qualidade</option>
+        <option value="Atendimento">Problema no atendimento</option>
+        <option value="Pagamento">Erro no pagamento</option>
+        <option value="Outro">Outro problema</option>
+      </select>
+
+      <label for="descricaoProblema">Descreva o ocorrido</label>
+      <textarea
+        id="descricaoProblema"
+        placeholder="Explique o que aconteceu..."
+        rows="4"
+        required
+      ></textarea>
+
+      <label for="contato">E-mail ou telefone para retorno (opcional)</label>
+      <input
+        type="text"
+        id="contato"
+        placeholder="Como podemos entrar em contato?"
+      >
+
+      <button type="submit" class="btn-problema">
+        Enviar reclamação
+      </button>
+
+      <p id="retornoProblema" role="status"></p>
+    </form>
+  </section>
+
+</main>
+
+   <!-- RODAPÉ -->
+    <footer id="contato" class="rodape">
+        <a href="#inicio" class="logo-rodape">
+            <!-- Pode usar a mesma logo do cabeçalho -->
+            <img src="https://drive.google.com/file/d/1wq7u1e0J61sY-HhqiLciwLhvtjv12TlC/view?usp=drive_link" alt="Capiva-Pizza">
+        </a>
+
+        <article class="telefone">
+            <p>+55 1998123-6776</p>
+        </article>
+
+        <nav aria-label="Redes sociais">
+            <ul class="redes-sociais">
+                <li><a href="https://www.instagram.com/k.mbappe/" aria-label="Instagram">Instagram</a></li>
+                <li><a href="https://www.facebook.com/Djavanoficial/" aria-label="Facebook">Facebook</a></li>
+                <li><a href="https://web.whatsapp.com/" aria-label="WhatsApp">WhatsApp</a></li>
+            </ul>
+        </nav>
+
+        <p class="direitos">© 2026 Capiva-Pizza. Todos os direitos reservados.</p>
+    </footer>
+
+</html>

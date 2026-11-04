@@ -1,0 +1,855 @@
+
+/* ==================================================
+   1. PALETA DE CORES E CONFIGURAÇÕES GERAIS
+================================================== */
+
+:root {
+    --bordo: #790D0D;
+    --vermelho-escuro: #5C0808;
+    --mostarda: #C49A18;
+    --fundo: #1B0505;
+    --creme: #F4EAD5;
+    --creme-claro: #FFFAF0;
+    --creme-escuro: #D8CBB2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fundo);
+    color: var(--creme);
+}
+
+/* ==================================================
+   2. CABEÇALHO E MENU DE NAVEGAÇÃO
+================================================== */
+
+.cabecalho-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 5px 3%;
+    background-color: var(--bordo);
+    border-bottom: 3px solid var(--mostarda);
+}
+
+.logo img {
+    width: 230px;
+    max-width: 100%;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style: none;
+}
+
+.menu a {
+    color: var(--creme);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: var(--mostarda);
+}
+
+/* ==================================================
+   3. ESTRUTURA PRINCIPAL E TÍTULOS
+================================================== */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+    background-color: var(--bordo);
+    color: var(--creme);
+    text-align: center;
+    font-size: clamp(2rem, 7vw, 85px);
+    padding: 20px;
+    margin: 0;
+}
+
+h2 {
+    color: var(--mostarda);
+}
+
+p {
+    line-height: 1.7;
+    color: var(--creme);
+}
+
+p::first-letter {
+    font-size: 1.3em;
+    color: var(--mostarda);
+}
+
+/* ==================================================
+   4. IMAGENS E LEGENDAS
+================================================== */
+
+figure {
+    text-align: center;
+    margin: 20px auto;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+figcaption {
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: var(--mostarda);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ==================================================
+   5. LETREIRO ANIMADO
+================================================== */
+
+.letreiro {
+    overflow: hidden;
+    white-space: nowrap;
+    background: var(--bordo);
+    color: var(--creme);
+}
+
+.trilho {
+    display: inline-flex;
+    animation: passa 12s linear infinite reverse;
+}
+
+.trilho span {
+    padding: 10px 24px;
+}
+
+@keyframes passa {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* ==================================================
+   6. BOTÕES
+================================================== */
+
+.botao {
+    background-color: var(--mostarda);
+    color: var(--fundo);
+    padding: 13px 26px;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s,
+                background-color 0.2s;
+}
+
+.botao:hover {
+    background-color: var(--bordo);
+    color: var(--creme);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 22px -8px rgba(196, 154, 24, 0.35);
+}
+
+.botao:active {
+    transform: translateY(-2px) scale(0.97);
+}
+
+/* ==================================================
+   7. AVALIAÇÃO POR ESTRELAS
+================================================== */
+
+.estrelas {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    border: none;
+    padding: 0;
+}
+
+.estrelas input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+.estrelas label {
+    font-size: 34px;
+    color: var(--vermelho-escuro);
+    cursor: pointer;
+    transition: color 0.15s;
+}
+
+.estrelas label:hover,
+.estrelas label:hover ~ label,
+.estrelas input:checked ~ label {
+    color: var(--mostarda);
+}
+
+.estrelas input:focus-visible + label {
+    outline: 2px solid var(--mostarda);
+    outline-offset: 3px;
+}
+
+/* ==================================================
+   8. HABILIDADES E BARRAS DE PROGRESSO
+================================================== */
+
+.habilidade {
+    margin: 30px 0;
+}
+
+.habilidade > span {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--creme);
+}
+
+.habilidade .trilho {
+    width: 100%;
+    height: 14px;
+    background-color: var(--vermelho-escuro);
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.habilidade .preenchido {
+    width: 70%;
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(
+        90deg,
+        var(--bordo),
+        var(--mostarda)
+    );
+    transition: width 0.5s ease;
+}
+
+/* ==================================================
+   9. CARDÁPIO E OUTROS SABORES
+================================================== */
+
+.outros-sabores {
+    margin-top: 40px;
+}
+
+.pizza {
+    display: inline-block;
+    width: 100%;
+    max-width: 350px;
+    margin: 10px;
+    padding: 15px;
+    vertical-align: top;
+    text-align: center;
+    background-color: var(--creme);
+    color: var(--fundo);
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+.pizza p {
+    font-size: 18px;
+    color: var(--fundo);
+}
+
+.pizza strong {
+    color: var(--bordo);
+}
+
+/* ==================================================
+   10. FORMULÁRIOS E CAMPOS DE SELEÇÃO
+================================================== */
+
+fieldset {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid var(--mostarda);
+    border-radius: 10px;
+}
+
+legend {
+    padding: 0 8px;
+    color: var(--mostarda);
+    font-weight: bold;
+}
+
+select {
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid var(--mostarda);
+    border-radius: 8px;
+    background-color: var(--creme);
+    color: var(--fundo);
+    font-size: 16px;
+}
+
+/* Seleção de lanche */
+
+#lanche {
+    width: 100%;
+    max-width: 350px;
+    padding: 12px 15px;
+    margin-top: 8px;
+    border: 2px solid var(--mostarda);
+    border-radius: 10px;
+    background-color: var(--creme);
+    color: var(--fundo);
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#lanche:hover,
+#lanche:focus {
+    border-color: var(--bordo);
+    box-shadow: 0 0 0 3px rgba(196, 154, 24, 0.2);
+}
+
+#lanche optgroup {
+    font-weight: bold;
+    color: var(--bordo);
+}
+
+#lanche option {
+    color: var(--fundo);
+    padding: 8px;
+}
+
+/* ==================================================
+   11. AVALIAÇÃO GERAL
+================================================== */
+
+.avaliacao {
+    background: var(--creme);
+    color: var(--fundo);
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.avaliacao h2 {
+    color: var(--bordo);
+    margin-bottom: 10px;
+}
+
+.avaliacao p {
+    color: var(--vermelho-escuro);
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.info span:last-child {
+    color: var(--bordo);
+}
+
+.barra {
+    width: 100%;
+    height: 14px;
+    background: var(--creme-escuro);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progresso {
+    width: 92%;
+    height: 100%;
+    background: var(--mostarda);
+    border-radius: 20px;
+    animation: carregar 1.2s ease;
+}
+
+.total {
+    font-size: 13px;
+    margin-top: 12px;
+    color: var(--vermelho-escuro);
+}
+
+@keyframes carregar {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 92%;
+    }
+}
+
+/* ==================================================
+   12. ÁREA DE FEEDBACK
+================================================== */
+
+.area-feedback {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    font-family: Arial, sans-serif;
+}
+
+.card-feedback {
+    background: var(--creme);
+    color: var(--fundo);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    border-top: 5px solid var(--mostarda);
+}
+
+.card-feedback.problema {
+    border-top-color: var(--bordo);
+}
+
+.card-feedback h2 {
+    color: var(--bordo);
+    margin-top: 0;
+}
+
+.card-feedback p {
+    color: var(--vermelho-escuro);
+    line-height: 1.5;
+}
+
+.card-feedback label {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--vermelho-escuro);
+}
+
+.card-feedback input,
+.card-feedback select,
+.card-feedback textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--mostarda);
+    border-radius: 8px;
+    font-size: 14px;
+    background: var(--creme-claro);
+    color: var(--fundo);
+    font-family: inherit;
+}
+
+.card-feedback textarea {
+    resize: vertical;
+}
+
+.card-feedback input:focus,
+.card-feedback select:focus,
+.card-feedback textarea:focus {
+    outline: 2px solid var(--mostarda);
+    border-color: var(--bordo);
+}
+
+.card-feedback button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    color: var(--creme);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-avaliacao {
+    background: var(--bordo);
+}
+
+.btn-problema {
+    background: var(--vermelho-escuro);
+}
+
+.card-feedback button:hover {
+    background: var(--mostarda);
+    color: var(--fundo);
+}
+
+/* ==================================================
+   13. JANELAS DE DIÁLOGO
+================================================== */
+
+dialog {
+    max-width: 90%;
+    border: 2px solid var(--mostarda);
+    border-radius: 18px;
+    padding: 26px;
+    background: var(--fundo);
+    color: var(--creme);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+    animation: surge 0.25s ease;
+}
+
+dialog::backdrop {
+    background: rgb(2 6 23 / 70%);
+    backdrop-filter: blur(3px);
+}
+
+dialog button {
+    padding: 10px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--bordo);
+    color: var(--creme);
+    cursor: pointer;
+}
+
+dialog button:hover {
+    background-color: var(--vermelho-escuro);
+}
+
+@keyframes surge {
+    from {
+        transform: translateY(14px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* ==================================================
+   14. CANCELAMENTO E CONFIRMAÇÃO
+================================================== */
+
+.cancelamento {
+    margin-top: 25px;
+}
+
+#abrir {
+    background-color: var(--bordo);
+    color: var(--creme);
+    border: none;
+    border-radius: 10px;
+    padding: 13px 22px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#abrir:hover {
+    background-color: var(--vermelho-escuro);
+    transform: translateY(-2px);
+}
+
+#abrir:active {
+    transform: scale(0.97);
+}
+
+#confirma {
+    width: calc(100% - 40px);
+    max-width: 400px;
+    padding: 28px;
+    border: 2px solid var(--mostarda);
+    border-radius: 16px;
+    background-color: var(--creme);
+    color: var(--fundo);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+#confirma::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px);
+}
+
+#confirma h2 {
+    margin-top: 0;
+    color: var(--bordo);
+    font-size: 24px;
+}
+
+#confirma p {
+    color: var(--vermelho-escuro);
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+#confirma button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#confirma button:hover {
+    transform: translateY(-2px);
+}
+
+#cancelar {
+    background-color: var(--creme-escuro);
+    color: var(--fundo);
+}
+
+#cancelar:hover {
+    background-color: var(--mostarda);
+}
+
+#confirmar {
+    background-color: var(--bordo);
+    color: var(--creme);
+}
+
+#confirmar:hover {
+    background-color: var(--vermelho-escuro);
+}
+
+/* ==================================================
+   15. RODAPÉ
+================================================== */
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 35px 6%;
+    background-color: var(--bordo);
+    border-top: 3px solid var(--mostarda);
+    color: var(--creme);
+    text-align: center;
+}
+
+.logo-rodape img {
+    width: 300px;
+    max-width: 100%;
+    display: block;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    list-style: none;
+}
+
+.redes-sociais a {
+    color: var(--fundo);
+    background-color: var(--mostarda);
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.redes-sociais a:hover {
+    background-color: var(--creme);
+}
+
+.direitos {
+    font-size: 16px;
+}
+
+/* ==================================================
+   16. RESPONSIVIDADE — TABLETS
+================================================== */
+
+@media (max-width: 900px) {
+
+    .cabecalho-principal {
+        flex-direction: column;
+        padding: 18px 5%;
+    }
+
+    .lista-categorias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ==================================================
+   17. RESPONSIVIDADE — CELULARES
+================================================== */
+
+@media (max-width: 650px) {
+
+    .area-feedback {
+        grid-template-columns: 1fr;
+        margin: 15px auto;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    main {
+        width: 94%;
+        margin: 15px auto;
+    }
+
+    h1 {
+        padding: 16px 8px;
+    }
+
+    .cabecalho-principal {
+        padding: 18px 5%;
+    }
+
+    .logo img {
+        width: 190px;
+    }
+
+    .menu {
+        gap: 14px;
+    }
+
+    .menu a {
+        font-size: 15px;
+    }
+
+    .letreiro .trilho span {
+        font-size: 16px;
+    }
+
+    .botao {
+        padding: 12px 18px;
+    }
+
+    .pizza {
+        display: block;
+        max-width: 100%;
+        margin: 15px 0;
+    }
+
+    .carrossel-banner {
+        gap: 5px;
+        padding: 0 5px;
+    }
+
+    .seta-banner {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .secao-cardapio {
+        padding: 40px 5%;
+    }
+
+    .titulo-secao h1 {
+        font-size: 26px;
+    }
+
+    .lista-categorias {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 220px;
+    }
+
+    dialog {
+        padding: 18px;
+    }
+
+    .direitos {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #lanche {
+        max-width: 100%;
+    }
+
+    #confirma {
+        padding: 22px 15px;
+    }
+
+    #confirma button {
+        padding: 11px 14px;
+        margin: 4px 2px;
+    }
+}
+
+/* ==================================================
+   18. ACESSIBILIDADE
+================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    .letreiro .trilho {
+        animation: none;
+    }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+
