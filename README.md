@@ -2,6 +2,8 @@
 
 Projeto de criação de um site para uma pizzaria fictícia, desenvolvido em grupo durante o curso do **SENAI**. O projeto tem finalidade exclusivamente educacional e foi criado para praticar desenvolvimento web, organização de páginas, estruturação de conteúdo, regras de negócio e trabalho em equipe com Git e GitHub.
 
+> **Atenção:** este repositório reúne versões antigas, protótipos e testes do CapivaPizza desenvolvidos durante a evolução do projeto. A versão final da pizzaria está disponível no repositório [CapivaPizza](https://github.com/gabrielaraujo-eng/CapivaPizza) e pode ser acessada pelo [GitHub Pages](https://gabrielaraujo-eng.github.io/CapivaPizza/).
+
 ## Sobre o projeto
 
 O **Capiva-Pizza** apresenta os produtos e as informações da pizzaria de forma clara e objetiva. O visitante pode navegar pela página inicial, consultar o cardápio, visualizar categorias, conferir detalhes dos pratos, consultar preços e ingredientes, conhecer a localização e solicitar uma reserva de mesa.
