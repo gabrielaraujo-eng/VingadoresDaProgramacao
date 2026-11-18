@@ -1,8 +1,15 @@
-# Capiva-Pizza — Projeto Educacional
+# Vingadores da Programação — versões antigas do CapivaPizza
 
 Projeto de criação de um site para uma pizzaria fictícia, desenvolvido em grupo durante o curso do **SENAI**. O projeto tem finalidade exclusivamente educacional e foi criado para praticar desenvolvimento web, organização de páginas, estruturação de conteúdo, regras de negócio e trabalho em equipe com Git e GitHub.
 
-> **Atenção:** este repositório reúne versões antigas, protótipos e testes do CapivaPizza desenvolvidos durante a evolução do projeto. A versão final da pizzaria está disponível no repositório [CapivaPizza](https://github.com/gabrielaraujo-eng/CapivaPizza) e pode ser acessada pelo [GitHub Pages](https://gabrielaraujo-eng.github.io/CapivaPizza/).
+## Atenção: este não é o projeto final
+
+Este repositório **VingadoresDaProgramacao** reúne versões antigas, protótipos e testes do CapivaPizza desenvolvidos durante a evolução do projeto.
+
+A versão final da pizzaria é o **CapivaPizza**:
+
+- **Repositório final:** [github.com/gabrielaraujo-eng/CapivaPizza](https://github.com/gabrielaraujo-eng/CapivaPizza)
+- **Site final no GitHub Pages:** [gabrielaraujo-eng.github.io/CapivaPizza](https://gabrielaraujo-eng.github.io/CapivaPizza/)
 
 ## Sobre o projeto
 
